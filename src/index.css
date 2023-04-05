@@ -24,7 +24,7 @@ html {
 }
 
 .home-content {
-  @apply flex-1 xl:justify-center justify-start flex flex-col gap-10 z-50;
+  @apply flex-1 xl:justify-center justify-start flex flex-col gap-10;
 }
 
 .head-text {

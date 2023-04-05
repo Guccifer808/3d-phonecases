@@ -33,7 +33,7 @@ const Home = () => {
             </motion.div>
             <motion.div
               {...headContentAnimation}
-              className='flex flex-col gap-5 mt-72 md:mt-2 z-50'
+              className='flex flex-col gap-5 mt-72 md:mt-2'
             >
               <p className='max-w-xl font-semibold text-black text-base'>
                 Build your unique and exclusive phone case with our 3D

@@ -10,7 +10,7 @@ export const EditorTabs = [
     icon: fileIcon,
   },
   {
-    name: 'aipicker',
+    name: 'aihelper',
     icon: ai,
   },
 ];

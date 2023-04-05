@@ -33,9 +33,9 @@ const Home = () => {
             </motion.div>
             <motion.div
               {...headContentAnimation}
-              className='flex flex-col gap-5'
+              className='flex flex-col gap-5 mt-72 md:mt-2'
             >
-              <p className='max-w-xl font-normal text-gray-700 text-base'>
+              <p className='max-w-xl font-semibold text-black text-base'>
                 Build your unique and exclusive phone case with our 3D
                 AI-powered tool
               </p>
@@ -43,7 +43,7 @@ const Home = () => {
                 type='filled'
                 title='Customize it'
                 handleClick={() => (state.start = false)}
-                customStyles='w-fit px-4 py-2.5 font-bold text-sm'
+                customStyles='w-fit px-4 py-2.5 font-bold text-sm mx-auto sm:mx-0'
               />
             </motion.div>
           </motion.div>

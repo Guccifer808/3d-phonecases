@@ -1,7 +1,28 @@
-import React from 'react';
+import { Canvas } from '@react-three/fiber';
+import { Environment, Center } from '@react-three/drei';
 
-const Canvas = () => {
-  return <div>Canvas</div>;
+import Shadow from './Shadow';
+import Camera from './Camera';
+import Case from './Case';
+
+const CanvasElement = () => {
+  return (
+    <Canvas
+      shadows
+      camera={{ position: [0, 0, 0], fov: 25 }}
+      gl={{ preserveDrawingBuffer: true }}
+      className='w-full max-w-full transition-all ease-in h-full'
+    >
+      <ambientLight intensity={0.4} />
+      <Environment preset='city' />
+      <Camera>
+        <Center>
+          <Case />
+        </Center>
+        <Shadow />
+      </Camera>
+    </Canvas>
+  );
 };
 
-export default Canvas;
+export default CanvasElement;

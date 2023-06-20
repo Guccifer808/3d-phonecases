@@ -15,6 +15,7 @@ const CanvasElement = () => {
     >
       <ambientLight intensity={0.4} />
       <Environment preset='city' />
+      {/* <Environment path='/hdri/' files='potsdamer_platz_1k.hdr' /> */}
       <Camera>
         <Center>
           <Case />
